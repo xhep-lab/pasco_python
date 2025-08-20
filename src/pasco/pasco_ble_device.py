@@ -437,7 +437,8 @@ class PASCOBLEDevice():
         Args: 
             measurement (dict): the measurement data from datasheets.py
         """
-        return measurement.get("Type") != "Derivative"
+        return True
+        # return measurement.get("Type") != "Derivative"
     
     
     def _initialize_sensor(self, sensor_channel):
